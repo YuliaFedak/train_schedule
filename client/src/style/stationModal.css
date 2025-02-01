@@ -1,0 +1,42 @@
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.station-list {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+.station-item {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.station-item:hover {
+    background-color: #efefef;
+    transform: translateY(-3px);
+}
+
+
+.station-item:active {
+    background-color: #efefef;
+    transform: translateY(0);
+}
+
+
+.no-results {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}

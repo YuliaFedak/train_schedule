@@ -1,0 +1,145 @@
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    padding-inline: 80px;
+    background-color: #A17158;
+}
+
+.body {
+    background-color: #A17158;
+    font-family: system-ui;
+}
+
+.log-out {
+    border: 2px solid white;
+    color: #7c5b2d;
+    padding-block: 3px;
+    padding-inline: 15px;
+    border-radius: 20px;
+    font-family: system-ui;
+}
+
+.admin-button {
+    border: 2px solid white;
+    color: #7c5b2d;
+    padding-block: 3px;
+    padding-inline: 15px;
+    border-radius: 20px;
+    font-family: system-ui;
+    margin-right: 15px;
+}
+
+.cite-name {
+    color: white;
+    font-family: system-ui;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+.station-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.one-line {
+    display: -webkit-inline-box;
+}
+
+.change-button {
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #7d7a7a;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #5a3d0d;
+}
+
+.station-button {
+    width: 100%;
+    text-align: left;
+    border: 0;
+    background: 0;
+}
+
+.direction {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead {
+    background-color: black;
+    color: white;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.form-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-edit {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
