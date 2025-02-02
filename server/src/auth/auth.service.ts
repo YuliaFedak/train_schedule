@@ -1,6 +1,6 @@
 import {BadRequestException, Injectable, UnauthorizedException} from '@nestjs/common';
 import {InjectRepository} from "@nestjs/typeorm";
-import {User} from "./entities/user.entity";
+import {User, UserRole} from "./entities/user.entity";
 import {Repository} from "typeorm";
 import {RegisterDto} from "./dto/register.dto";
 import * as bcrypt from 'bcrypt';
@@ -28,7 +28,8 @@ export class AuthService {
         const user = await this.userRepository.save({
             username: registerDto.username,
             email: registerDto.email,
-            password: hashPassword
+            password: hashPassword,
+            role: registerDto.role || UserRole.User,
         })
         return this.generateToken({id: user.id, username: user.username, email: user.email, role: user.role})
     }

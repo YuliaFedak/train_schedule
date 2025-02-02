@@ -32,12 +32,15 @@ import { ScheduleModule } from './schedule/schedule.module';
             useFactory: async (configService: ConfigService) => ({
                 type: 'postgres',
                 url: process.env.DB_URL,
+                ssl: {
+                    rejectUnauthorized: false,
+                },
                 // host: configService.get('DB_HOST'),
                 // port: configService.get('DB_PORT'),
                 // password: configService.get('DB_PASSWORD'),
                 // username: configService.get('DB_USERNAME'),
-                entities: [User, Schedule, Station],
                 // database: 'train_schedule',
+                entities: [User, Schedule, Station],
                 synchronize: true,
             }),
             inject: [ConfigService],
